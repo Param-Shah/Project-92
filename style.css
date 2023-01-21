@@ -1,0 +1,27 @@
+body {
+    background-image:url(bg-image.jpg);
+    background-size:100%  1000%;
+}
+#main_div {
+   background-color: white; 
+   border-radius:10px;
+   width:50% ;
+}
+#main-title {
+    color: white;
+}
+
+
+#output {
+    background: white;
+    border-radius: 10px;
+    border-top: 15px solid #56f848;
+    padding: 10px;
+    float: none;
+    text-align: left;
+}
+
+
+input {
+    width: 50%;
+}
