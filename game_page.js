@@ -18,3 +18,39 @@ function send() {
     document.getElementById("number1").innerHTML = ""
     document.getElementById("number2").innerHTML = ""
 }
+
+
+question_turn = "player1"
+answer_turn = "player2"
+player1_score = ""
+player2_score = ""
+
+function check() {
+    get_answer = document.getElementById("input_check_box").value
+
+    if (get_answer == ans) {
+        if (answer_turn == "player1") {
+            update_player1_score = player1_score + 1
+            document.getElementById("p1_score").innerHTML = update_player1_score
+        }
+        else {
+            update_player2_score = player2_score + 1
+            document.getElementById("p2_score").innerHTML = update_player2_score
+        }
+    }
+
+
+
+
+
+
+    if (question_turn == "player1") {
+        question_turn = "player2"
+        document.getElementById("qturn").innerHTML = "question Turn - " + player2_name
+    }
+    else {
+        question_turn = "player1"
+        document.getElementById("qturn").innerHTML = "question Turn - " + player1_name
+
+    }
+}
