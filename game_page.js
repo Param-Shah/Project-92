@@ -1,10 +1,20 @@
+question_turn = localStorage.getItem("player1 name")
+answer_turn = localStorage.getItem("player2 name")
+
+document.getElementsById("qturn").innerHTML = question_turn
+document.getElementsById("aturn").innerHTML = answer_turn
+
+player1_score = ""
+player2_score = ""
+
+
 function send() {
 
     number1 = document.getElementById("number1").innerHTML
     number2 = document.getElementById("number2").innerHTML
     ans = parseInt(number1) * parseInt(number2)
 
-    question = "<h4>" + number1 + "X" + number2 + "</h4>"
+    question = "<h4>" + " " + number1 + " " + "X" + " " + " " +  number2 + " " +  "</h4>"
 
     input = "<br> Answer: <input type='text' id='input_check_box'"
 
@@ -20,10 +30,6 @@ function send() {
 }
 
 
-question_turn = "player1"
-answer_turn = "player2"
-player1_score = ""
-player2_score = ""
 
 function check() {
     get_answer = document.getElementById("input_check_box").value
